@@ -1,0 +1,18 @@
+<h1>[{{title}}] 글 작성</h1>
+
+<form method="post" action="/write">
+  <label>제목</label>
+  <input name="title" required />
+
+  <label>이름</label>
+  <input name="writer" required />
+
+  <label>비밀번호</label>
+  <input type="password" name="password" required />
+
+  <label>내용</label>
+  <textarea name="content" rows="10" cols="50" required></textarea>
+
+  <button type="submit">저장</button>
+  <button type="button" onclick="location.href='/'">취소</button>
+</form>
